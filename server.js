@@ -5,7 +5,7 @@ const path = require('path');
 // Crear una instancia de Express
 const app = express();
 
-// Definir el puerto
+// Definir el puerto numero del local 
 const PORT = 3000;
 
 // Servir archivos estáticos desde la carpeta 'public'
