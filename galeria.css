@@ -1,0 +1,159 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+header{
+    background-color: #F5E9B9;
+    display: flex;
+    padding-left: 20px;
+}
+
+.opcion{
+    justify-content: center;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    justify-content: right;
+}
+.menuu{
+    padding: 50px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.href:hover{
+    color: white;
+}
+
+.botones{
+    background-color: #F5E9B9;
+    border-radius: 5px;
+    text-align: center;
+    border-color: transparent;
+}
+.botonE{
+    background-color: rgba(255, 0, 0, 0.593);
+    border-radius: 20px;
+    border-color: rgba(255, 0, 0, 0.593);
+}
+.redes{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+
+
+.cuadricula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    height: auto;
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: #F5E9B9;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+/* GALERIA */
+body {
+  background: rgb(138,82,0);
+  background: linear-gradient(90deg, rgba(138,82,0,1) 0%, rgba(210,150,62,0.938813025210084) 61%, rgba(252,220,174,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+  } 
+  .container {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .lightbox-gallery div > img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .lightbox-gallery div {
+    margin: 10px;
+    flex-basis: 180px;
+  }
+  
+  /* @media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  } 
+  
+  /*Lighbox CSS*/
+  
+  .lightbox {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .lightbox img {
+    display: block;
+    margin: auto;
+  }
+  
+  .lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+  }
+

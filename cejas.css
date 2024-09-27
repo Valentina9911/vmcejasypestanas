@@ -1,0 +1,92 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    /* background-color: #3bb2b8;
+        background: linear-gradient(
+          25deg,
+          rgba(18, 113, 172, 0.598),
+          rgb(99, 175, 164),
+          rgba(28, 110, 191, 0.554)
+        ); */
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: "Open Sans", sans-serif;
+    
+}
+header{
+    background-color: rgb(194, 247, 230);
+    display: flex;
+    padding-left: 20px;
+}
+.cuadro{
+    background-color: rgba(186, 239, 231, 0.549);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+font-size: 200%;
+}
+
+
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+.menuu{
+    padding: 50px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.href:hover{
+    color: white;
+}
+
+.botones{
+    background-color: #99ffdbc7;
+    border-radius: 5px;
+    text-align: center;
+    border-color: transparent;
+}
+
+.redes{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+.ceja{
+    width: 50%;
+    height: auto;
+}
+.cuadricula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 190px;
+    gap: 1em;
+    list-style: none;
+}
+.images{
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: rgb(194, 247, 230);
+    padding: 20px;
+    text-align: center;
+}
