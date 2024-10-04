@@ -1,0 +1,427 @@
+body{
+    font-family: 'Italiana', sans-serif;
+        /* background-color: #3bb2b8;
+        background: linear-gradient(
+          25deg,
+          rgb(70, 247, 229),
+          rgb(96, 133, 125)
+        ); */
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: "Open Sans", sans-serif;
+}
+/* menu */
+header{
+    background-color: #F5E9B9;
+    display: flex;
+    padding-left: 20px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    justify-content: right;
+}
+.menuu{
+    padding: 50px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 50px;
+    text-align: center;
+}
+.href:hover{
+    color: white;
+}
+
+/* fin menu */
+
+                /*IMAGENES CARRUSEL*/
+
+.carrusel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    background-color: #F7E3B4;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carrusel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen {
+    width: 20%;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.texto {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.texto p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 50px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Indicadores del carrusel */
+.indicadores {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #F5E9B9;
+}
+
+/* Oculta todas las diapositivas por defecto */
+.carrusel-slide {
+    display: none;
+}
+
+.carrusel-slide.active {
+    display: block;
+}
+
+                    /*FIN IMAGENES CARRUSEL*/
+/*Sección de promoción del mes*/
+
+.circles {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los círculos */
+    margin-top: 20px;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-color: #D9B382;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Arial', sans-serif;
+  }
+
+/*fin promo*/
+
+
+
+/* Contenedor general del formulario citas */
+.botones{
+    background-color: #EFC76F;
+    border-radius: 5px;
+    text-align: center;
+    border-color: transparent;
+}
+/* Estilo para los botones */
+.botones {
+    background-color: #F5E9B9;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo hover para los botones */
+.botones:hover {
+    background-color: #E0D1A0;
+}
+
+/* Estilo específico para el botón especial */
+.botonE {
+    background-color: #D2963E;
+    border-radius: 20px;
+    border: 2px solid #97591C;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilo hover para el botón especial */
+.botonE:hover {
+    background-color: #C2852D;
+    transform: scale(1.05);
+}
+.appointment-form {
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form select,
+.appointment-form input,
+.appointment-form button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form button {
+    background-color: #EFC76F;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.appointment-form button:hover {
+    background-color: #97591C;
+}
+
+.redes {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+                /*fin caja de citas*/
+
+/* Estilo para el contenedor de redes sociales */
+.redes-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo para los iconos de redes sociales */
+.redes {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* Efecto hover para los iconos de redes sociales */
+.redes:hover {
+    transform: scale(1.2);
+}
+
+/* contenido */
+.text{
+    display: inline-block;  
+    font-size: 100px;
+    text-decoration: none;
+    color: #97591C;
+    padding: 0 50px;
+    cursor: pointer;
+    display: flex;
+}
+img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.imagen-circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #000; /* Opcional: un borde alrededor de la imagen */
+}
+
+.imagen-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen se ajuste al contenedor circular */
+}
+/*inicio formulario de contacto*/
+
+
+.formulario {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.contact-form {
+    width: 800px;
+    background-color: #D9B382;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    margin: 0 auto; 
+    justify-content: center; 
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.logoct {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoct img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.formulario {
+    flex: 2;
+    padding-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dbd593;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.groupform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6B4423;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #8C6134;
+}
+
+/*fin formulario de contacto*/
+
+footer{
+    background-color: #F5E9B9;
+    padding: 10px;
+    text-align: center;
+}
+

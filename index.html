@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENTRE CEJAS Y PESTAÑAS MT</title>
+    <link rel="stylesheet" href="./inicio.css">
+    <link rel="icon" href="images/logovm.png" >
+    <link rel="php" href="vcarco.php" >
+  </head>
+
+  <body>
+    <article id="#home">
+    <!---menu--->
+    <header class="menu">
+      <img class="logo" src="./images/logovm.png">
+    <nav class="menuu">
+      <ul>
+        <li class="opcion"><a href="index.html" class="href">Inicio</a></li>
+        <li class="opcion"><a href="contacto.html" class="href">Contacto</a></li>
+        <li class="opcion"><a href="nosotros.html" class="href">Sobre Nosotros</a></li>
+        <li class="opcion"><a href="galeria.html" class="href">Galeria</a></li>
+      </ul>
+  </nav>
+</header>
+<br>
+
+
+<!---IMAGENES FORMATO CARRUSEL--->
+<div class="carrusel-container">
+  <div class="carrusel-slide active">
+      <div class="carrusel-content">
+          <div class="imagen">
+            <a href="pestañas.html">
+              <img src="images/ceja6.jpeg" alt="Imagen 1">
+            </a>
+              <p>CEJAS</p>
+          </div>
+          <div class="imagen">
+            <a href="pestañas.html">
+              <img src="images/ceja3.jpeg" alt="Imagen 2">
+            </a>
+              <p>Lorem Ipsum dolor sit amet</p>
+          </div>
+          <div class="texto">
+              <h2>CEJAS</h2>
+              <p>Manejamos el diseño de las cejas más la depilación con cera o hilo, si deseas se puede implementar el pigmento temporal para manejar un estilo de cejas maquillado</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="carrusel-slide">
+      <div class="carrusel-content">
+          <div class="imagen">
+            <a href="pestañas.html">
+              <img src="images/ceja6.jpeg" alt="Imagen 3">
+            </a>
+              <p>Lorem Ipsum dolor sit amet</p>
+          </div>
+          <div class="imagen">
+            <a href="pestañas.html">
+              <img src="images/ceja4.jpeg" alt="Imagen 4">
+            </a>
+              <p>Lorem Ipsum dolor sit amet</p>
+          </div>
+          <div class="texto">
+              <h2>PESTAÑAS</h2>
+              <p>Extensiones de pestañas con un efecto de ojo maquillado, diferentes tecnicas, atención personalizada para que quedes satisfecha con tu mirada</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="carrusel-slide">
+    <div class="carrusel-content">
+        <div class="imagen">
+          <a href="pestañas.html">
+            <img src="images/pestaña2.jpeg" alt="Imagen 5">
+          </a>
+            <p>Lorem Ipsum dolor sit amet</p>
+        </div>
+        <div class="imagen">
+          <a href="pestañas.html">
+            <img src="images/laminado.jpeg" alt="Imagen 6">
+          </a>
+            <p>Lorem Ipsum dolor sit amet</p>
+        </div>
+        <div class="texto">
+            <h2>LAMINADO DE CEJAS</h2>
+            <p>Procedimiento diseñado para darle a esta parte del rostro un aspecto mpas definido y disciplinado sin necesidad de maquillaje diario</p>
+        </div>
+    </div>
+</div>
+  <!-- Botones de navegación -->
+  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+  <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  <button class="next" onclick="plusSlides(+1)">&#10095;</button>
+</div>
+
+<!-- Indicadores del carrusel -->
+<div class="indicadores">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="carrusel.js"></script>
+<!--- FIN IMAGENES FORMATO CARRUSEL--->
+<divbanner>
+  <h1>
+      Lorem Ipsum
+  </h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sem erat. Integer vulputate iaculis lectus, dignissim placerat mauris iaculis at. Cras lobortis a est in ornare. Quisque efficitur suscipit orci, at euismod enim venenatis vitae. Praesent gravida diam tincidunt augue sollicitudin, eget ultricies leo condimentum.
+  </p> 
+  
+</divbanner>
+<!-- INICIO PROMO DEL MES -->
+<div class="promo">
+  <h2>
+     Promoción del mes
+  </h2>
+  <div class="circles">
+    <div class="imagen-circular">
+      <a href="cejas.html">
+          <img src="images/pestanapromo2.jpeg" alt="Imagen circular">
+      </a>
+  </div>
+  <div class="imagen-circular">
+    <a href="cejas.html">
+        <img src="images/laminado.jpeg" alt="Imagen circular">
+    </a>
+</div>
+<div class="imagen-circular">
+  <a href="cejas.html">
+      <img src="images/liftingpromo.jpeg" alt="Imagen circular">
+  </a>
+</div>
+</div>
+
+<br>
+<br>
+<!-- FIN PROMO DEL MES -->
+
+<!---procesos caja de citas-->
+<h3>AGENDA TU CITA</h3>
+
+<form class="appointment-form" name="f1" action="#"> 
+  <select name="zona" class="botones" id="lang" onchange="cambia_procedimiento()"> 
+    <option value="0" selected>Seleccione...</option>
+    <option value="1">Cejas</option>
+    <option value="2">Pestañas</option>
+    <option value="3">Lifting</option>
+  </select>
+  
+  <select name="procedimiento" class="botones" id="lang2"> 
+    <option value="-">-</option>
+  </select>
+
+  <input id="Nombre" type="texto" class="botones" placeholder="Nombre" />
+  <input id="Fecha" type="date" class="botones" placeholder="Fecha" />
+  <input type="button" class="botonE" value="Pedir cita" onclick="myFunction()" />
+</form>
+
+<script>
+  var procedimientos_1 = ["-", "Depilación en hilo o cera", "Diseño de cejas", "Pigmento temporal"];
+  var procedimientos_2 = ["-", "Extensiones pelo a pelo", "Extensiones de volumen", "Extensiones 2D", "Retoque"];
+  var procedimientos_3 = ["-", "Lifting"];
+  var todosProcedimientos = [[], procedimientos_1, procedimientos_2, procedimientos_3];
+
+  function cambia_procedimiento() { 
+    var zona = document.f1.zona[document.f1.zona.selectedIndex].value;
+    if (zona != 0) { 
+      var mis_procedimientos = todosProcedimientos[zona];
+      var num_procedimientos = mis_procedimientos.length;
+      document.f1.procedimiento.length = num_procedimientos;
+      for (var i = 0; i < num_procedimientos; i++) {
+        document.f1.procedimiento.options[i].value = mis_procedimientos[i];
+        document.f1.procedimiento.options[i].text = mis_procedimientos[i];
+      }
+    } else {
+      document.f1.procedimiento.length = 1;
+      document.f1.procedimiento.options[0].value = "-";
+      document.f1.procedimiento.options[0].text = "-";
+    }
+    document.f1.procedimiento.options[0].selected = true;
+  }
+
+  function myFunction() {
+    var combo = document.getElementById("lang");
+    var selected = combo.options[combo.selectedIndex].text;
+    var comb = document.getElementById("lang2");
+    var select = comb.options[comb.selectedIndex].text;
+    var Nom = document.getElementById("Nombre").value;
+    var Fec = document.getElementById("Fecha").value;
+    var resultado = "https://api.whatsapp.com/send/?phone=573208610876&text=Hola+mi+nombre+es+" + Nom + "+y+quiero+programar+mi+cita+de+" + selected + "+con+el+procedimiento+de+" + select + "+para+el+dia+" + Fec + ";&type=phone_number&app_absent=0";
+    window.location.href = resultado;
+  }
+</script>
+</script>
+<br>
+
+
+
+<!--inicio formulario de contacto-->
+
+<section id="formulario-contacto">
+  <h3>
+    CONTACTO
+  </h3>
+<div class="contact-form">
+  <div class="logoct">
+      <img src="images/logovm.png" alt="Logovm">
+  </div> 
+  <div class="formulario">
+      <form>
+          <div class="groupform">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" id="apellidos" name="apellidos">
+          </div>
+          <div class="groupform">
+              
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email">
+          </div>
+          <div class="groupform">
+              <label for="celular">Celular</label>
+              <input type="tel" id="celular" name="celular">
+          </div>
+          <div class="groupform">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+          <button type="submit">ENVIAR</button>
+      </form>
+  </div>
+</div>
+</section>
+<!--fin formulario de contacto-->
+<br>
+<br>
+
+<!---footer-->
+<footer class="h">
+VM CEJAS Y PESTAÑAS &copy; 2024
+  <button class="redes"><a href="tel:+573203958934"><img class="redes" src="/images/phone.png"></button></a>
+    <button class="redes"><a href="https://instagram.com/vmcejasypestanas?igshid=YmMyMTA2M2Y="><img class="redes" src="./images/instagram.png"></button></a>
+    <button class="redes"><a href="https://api.whatsapp.com/send/?phone=57320861876&text=Hola+Quiero+programar+mi+cita&type=phone_number&app_absent=0"><img class="redes" src="./images/wlgo.png"></button></a>
+    <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/facebook.png"></button></a>
+</footer>
+
+    <div idnpm="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

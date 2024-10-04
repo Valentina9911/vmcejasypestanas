@@ -5,15 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENTRE CEJAS Y PESTAÑAS MT</title>
-    <link rel="stylesheet" href="./src/inicio.css">
-    <link rel="icon" href="./images/logo1.ico" >
+    <link rel="stylesheet" href="cejas.css">
+    <link rel="icon" href="public/images/logovm.png" >
   </head>
 
   <body>
     <article id="#cejas">
     <!---menu--->
     <header class="menu">
-      <img class="logo" src="./images/logovm.png">
+      <img class="logo" src="images/logovm.png">
     <nav>
       <ul>
         <li class="opcion"><a href="index.html" class="href">Inicio</a></li>
@@ -38,18 +38,98 @@
         <marquee>
           <div>
             <nav class="cuadricula">
-                    <li><img class="images" src="./images/ceja1.jpeg"></li>
-                    <li><img class="images" src="./images/ceja2.jpeg"></li>
-                    <li><img class="images" src="./images/ceja3.jpeg"></li>
-                    <li><img class="images" src="./images/ceja4.jpeg"></li>
-                    <li><img class="images" src="./images/ceja6.jpeg"></li>
-                    <li><img class="images" src="./images/logovm.png"></li>
+                    <li><img class="images" src="public/images/ceja1.jpeg"></li>
+                    <li><img class="images" src="public/images/ceja2.jpeg"></li>
+                    <li><img class="images" src="public/images/ceja3.jpeg"></li>
+                    <li><img class="images" src="public/images/ceja4.jpeg"></li>
+                    <li><img class="images" src="public/images/ceja6.jpeg"></li>
+                    <li><img class="images" src="public/images/logovm.png"></li>
             </nav>
         </div>
       </marquee>
+
+
+      <!---procesos caja de citas-->
+
+
+<form name="f1" action="#"> 
+  <select name="zona" class="botones" id="lang" onchange="cambia_procedimiento()"> 
+  <option value="0" selected>Seleccione... 
+  <option value="1">Cejas 
+  <option value="2">Pestañas 
+  <option value="3">Lifting 
+
+  </select>
+  
+  <select name="procedimiento" class="botones" id="lang2" > 
+  <option value="-">- 
+  </select> 
+  <input id="Nombre" type="texto" class="botones" placeholder="Nombre" />
+  <input id="Fecha" type="date" class="botones" placeholder="Fecha" />
+  
+
+<input type="button" class="botonE" value="Pedir cita" onclick="myFunction()"/>
+</form>
+
+<script>
+
+  var procedimientos_1=new Array("-","Depilacion en hilo o cera","Diseño de cejas","Pigmento temporal");
+  var procedimientos_2=new Array("-","Extensiones pelo a pelo","Extensiones de volumen","Extensiones 2D","Retoque");
+  var procedimientos_3=new Array("-","Lifting");
+  
+
+  var todosProcedimientos = [
+    [],
+    procedimientos_1,
+    procedimientos_2,
+    procedimientos_3,
+    
+  ];
+
+  function cambia_procedimiento(){ 
+ 
+   	var zona 
+   	zona = document.f1.zona[document.f1.zona.selectedIndex].value 
+ 
+   	if (zona != 0) { 
+    
+      	mis_procedimientos=todosProcedimientos[zona]
+
+      	num_procedimientos = mis_procedimientos.length 
+     
+      	document.f1.procedimiento.length = num_procedimientos 
+   
+      	for(i=0;i<num_procedimientos;i++){ 
+         	document.f1.procedimiento.options[i].value=mis_procedimientos[i] 
+         	document.f1.procedimiento.options[i].text=mis_procedimientos[i] 
+      	}	
+   	}else{ 
+
+      	document.f1.procedimiento.length = 1 
+     
+      	document.f1.procedimiento.options[0].value = "-" 
+      	document.f1.procedimiento.options[0].text = "-" 
+   	} 
+  
+   	document.f1.procedimiento.options[0].selected = true 
+}
+function myFunction() {
+var combo = document.getElementById("lang");
+var selected = combo.options[combo.selectedIndex].text;
+var comb = document.getElementById("lang2");
+var select = comb.options[comb.selectedIndex].text;
+var Nom =document.getElementById ("Nombre").value;
+var Fec =document.getElementById("Fecha").value;
+var resultado = "https://api.whatsapp.com/send/?phone=573208610876&text=Hola+mi+nombre+es+"+Nom+"+y+quiero+programar+mi+cita+de+"+selected+"+con+el+procedimiento+de+"+select+"+para+el+dia+"+Fec+";&type=phone_number&app_absent=0"
+
+window.location.href = resultado;
+  }
+  
+</script>
+<!---fin caja de citas-->
     <!---footer-->
 <footer class="palabra">Entre Cejas Y Pestañas &copy; 2023
-  <button class="redes"><a href="tel:+573203958934"><img class="redes" src="./images/phone.svg"></button></a>
+  <button class="redes"><a href="tel:+573203958934"><img class="redes" src="images/phone.svg"></button></a>
   <button class="redes"><a href="https://instagram.com/entrecejasypestanasmt?igshid=YmMyMTA2M2Y="><img class="redes" src="./images/instagram.png"></button></a>
   <button class="redes"><a href="https://api.whatsapp.com/send/?phone=573203958934&text=Hola+%C2%BFQuiero+programar+mi+cita&type=phone_number&app_absent=0"><img class="redes" src="./images/wlgo.png"></button></a>
   <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/facebook.png"></button></a>

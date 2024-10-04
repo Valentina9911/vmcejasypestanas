@@ -12,27 +12,14 @@ body{
         font-family: "Open Sans", sans-serif;
     
 }
+/*header*/
 header{
-    background-color: rgb(194, 247, 230);
+    background-color: #F5E9B9;
     display: flex;
     padding-left: 20px;
 }
-.cuadro{
-    background-color: rgba(186, 239, 231, 0.549);
-}
-h1{
-    text-align: center;
-    font-size: 50px;
-}
-h2{
-font-size: 200%;
-}
-
-
-.logo{
-    width: 80px;
-    height: 80px;
-    padding: 20px;
+.href:hover{
+    color: white;
 }
 .menuu{
     padding: 50px;
@@ -46,15 +33,32 @@ font-size: 200%;
     text-decoration: none;
     color: black;
     padding: 0 50px;
-    text-align: center;
+   
 }
 
-.href:hover{
-    color: white;
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
 }
+
+/*fin header*/
+.cuadro{
+    background-color: #F5E9B9;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+font-size: 200%;
+}
+
+
+
 
 .botones{
-    background-color: #99ffdbc7;
+    background-color: #F5E9B9;
     border-radius: 5px;
     text-align: center;
     border-color: transparent;
@@ -86,7 +90,82 @@ font-size: 200%;
     background-repeat: no-repeat;
 }
 footer{
-    background-color: rgb(194, 247, 230);
+    background-color: #F5E9B9;
     padding: 20px;
     text-align: center;
 }
+
+/* Contenedor general del formulario */
+.form-citas {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los labels */
+.form-citas label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de texto */
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto hover en los campos de texto */
+.input-text:hover {
+    border-color: #B59A6C;
+}
+
+/* Estilo para los botones */
+.botones {
+    background-color: #F5E9B9;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo hover para los botones */
+.botones:hover {
+    background-color: #E0D1A0;
+}
+
+/* Estilo específico para el botón especial */
+.botonE {
+    background-color: #D2963E;
+    border-radius: 20px;
+    border: 2px solid #97591C;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilo hover para el botón especial */
+.botonE:hover {
+    background-color: #C2852D;
+    transform: scale(1.05);
+}
+
+/*fin caja de citas*/
